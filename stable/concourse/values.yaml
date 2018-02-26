@@ -446,6 +446,12 @@ worker:
   #               values:
   #                 - "true"
 
+  # Additional spec that can be added to the worker pods. Can be used to add anything to the spec,
+  # such as a nodeSelector
+  #additionalSpec:
+  #  nodeSelector:
+  #    type: concourse
+  
   ## Tolerations for the worker nodes.
   ## Ref: https://kubernetes.io/docs/concepts/configuration/taint-and-toleration/
   tolerations: []
